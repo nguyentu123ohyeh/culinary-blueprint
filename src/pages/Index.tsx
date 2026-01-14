@@ -5,7 +5,7 @@ import { useState } from "react";
 import { ArrowRight, Zap } from "lucide-react";
 import heroCookware from "@/assets/hero-cookware.jpg";
 import productPot from "@/assets/product-pot.jpg";
-import productKnife from "@/assets/product-knife.jpg";
+import productShelves from "@/assets/51d05EYQzFL._AC_.jpg";
 import productDining from "@/assets/product-dining.jpg";
 
 const materials = [
@@ -134,19 +134,19 @@ export default function Index() {
               </div>
             </Link>
 
-            {/* Medium - Knives */}
+            {/* Medium - Kitchen Shelves */}
             <Link
               to="/products"
               className="col-span-1 row-span-1 group relative overflow-hidden border border-foreground/10 card-hover aspect-square"
             >
               <img
-                src={productKnife}
-                alt="Professional chef's knife"
+                src={productShelves}
+                alt="Modern kitchen shelves"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-4">
-                <h3 className="text-lg font-bold text-stone">Knives</h3>
+                <h3 className="text-lg font-bold text-stone">Kitchen Shelves</h3>
               </div>
             </Link>
 
@@ -245,7 +245,7 @@ export default function Index() {
             Ready to Elevate Your Kitchen?
           </h2>
           <p className="text-muted-foreground max-w-md mx-auto mb-8">
-            Join thousands of home cooks and professional chefs who trust Épicure.
+            Join thousands of home cooks and professional chefs who trust Nolan Hendree.
           </p>
           <Button variant="hero" asChild>
             <Link to="/products">

@@ -8,7 +8,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link to="/" className="text-2xl font-black tracking-tighter uppercase">
-              Épicure
+              Nolan Hendree
             </Link>
             <p className="mt-4 text-stone/60 text-sm leading-relaxed">
               Precision in every detail. Crafted for those who understand that great cooking starts with exceptional tools.
@@ -59,11 +59,11 @@ export function Footer() {
               Contact
             </h4>
             <ul className="space-y-3 text-sm text-stone/60">
-              <li>concierge@epicure.com</li>
-              <li>+1 (555) 123-4567</li>
+              <li>ucrjykipk159@hotmail.com</li>
+              <li>+1 2277275201</li>
               <li className="pt-2">
-                <span className="block">123 Culinary District</span>
-                <span className="block">New York, NY 10001</span>
+                <span className="block">Bernie Way 1966 Hampton</span>
+                <span className="block">Georgia 30228</span>
               </li>
             </ul>
           </div>
@@ -72,7 +72,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-stone/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-stone/40 font-mono">
-            © 2026 ÉPICURE. ALL RIGHTS RESERVED.
+            © 2026 Nolan Hendree. ALL RIGHTS RESERVED.
           </p>
           <div className="flex items-center gap-6">
             <span className="text-xs text-stone/40 font-mono">DURABLE</span>

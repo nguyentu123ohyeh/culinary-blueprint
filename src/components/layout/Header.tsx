@@ -7,7 +7,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "The Craft" },
   { href: "/products", label: "Shop" },
-  { href: "/contact", label: "Concierge" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 export function Header() {
@@ -21,7 +21,7 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <span className="text-xl md:text-2xl font-black tracking-tighter uppercase">
-              Épicure
+              Nolan Hendree
             </span>
           </Link>
 

@@ -55,7 +55,7 @@ export default function Contact() {
                 <div className="aspect-[16/10] overflow-hidden border border-foreground/10">
                   <img
                     src={showroom}
-                    alt="Épicure showroom interior"
+                    alt="Nolan Hendree showroom interior"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -68,8 +68,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold uppercase tracking-wider text-sm">Address</h3>
                     <p className="text-sm text-muted-foreground mt-1">
-                      123 Culinary District<br />
-                      New York, NY 10001
+                      Bernie Way 1966 Hampton<br />
+                      Georgia 30228
                     </p>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold uppercase tracking-wider text-sm">Phone</h3>
                     <p className="text-sm text-muted-foreground mt-1">
-                      +1 (555) 123-4567
+                      +1 2277275201
                     </p>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold uppercase tracking-wider text-sm">Email</h3>
                     <p className="text-sm text-muted-foreground mt-1">
-                      concierge@epicure.com
+                      ucrjykipk159@hotmail.com
                     </p>
                   </div>
                 </div>
