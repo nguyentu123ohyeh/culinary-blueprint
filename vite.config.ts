@@ -12,11 +12,21 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  base: "./",
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  // Đổi thành "/" cho domain riêng nolanhendree.com
+  base: "/", 
+  plugins: [
+    react(),
+    mode === "development" && componentTagger(),
+  ].filter(Boolean),
   resolve: {
     alias: {
+      // Đảm bảo đường dẫn này khớp tuyệt đối để hết lỗi gạch đỏ
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    // Đảm bảo assets được tạo ra đúng cấu trúc
+    outDir: "dist",
+    assetsDir: "assets",
+  }
 }));
