@@ -25,9 +25,10 @@ export default function Products() {
     const matchPrice =
       activeFilters.price.length === 0 ||
       activeFilters.price.some((range) => {
-        if (range === "Under $100") return product.price < 100;
-        if (range === "$100-$300") return product.price >= 100 && product.price <= 300;
-        if (range === "Over $500") return product.price > 500;
+        if (range === "Under $50") return product.price < 50;
+        if (range === "$50-$100") return product.price >= 50 && product.price <= 100;
+        if (range === "$100-$200") return product.price >= 100 && product.price <= 200;
+        if (range === "Over $200") return product.price > 200;
         return true;
       });
 
