@@ -1,96 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* The Modern Epicurean - Luxury Culinary Palette */
+    --background: 60 10% 89%; /* Warm Stone */
+    --foreground: 240 3% 10%; /* Deep Charcoal */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 60 8% 95%;
+    --card-foreground: 240 3% 10%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 60 10% 89%;
+    --popover-foreground: 240 3% 10%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 240 3% 10%; /* Deep Charcoal */
+    --primary-foreground: 60 10% 89%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 60 6% 82%;
+    --secondary-foreground: 240 3% 10%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 60 5% 85%;
+    --muted-foreground: 240 3% 35%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 38 24% 63%; /* Brushed Brass */
+    --accent-foreground: 240 3% 10%;
+
+    --brass: 38 24% 63%;
+    --brass-foreground: 240 3% 10%;
+    --brass-glow: 38 30% 70%;
+
+    --terracotta: 15 45% 55%;
+    --terracotta-foreground: 60 10% 95%;
+
+    --charcoal: 240 3% 10%;
+    --charcoal-light: 240 3% 18%;
+    --stone: 60 10% 89%;
+    --stone-light: 60 8% 95%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 60 10% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 3% 25%;
+    --input: 60 5% 85%;
+    --ring: 38 24% 63%;
 
-    --radius: 0.5rem;
+    --radius: 4px;
 
-    --sidebar-background: 0 0% 98%;
+    /* Shadows */
+    --shadow-subtle: 0 1px 2px 0 hsl(240 3% 10% / 0.05);
+    --shadow-elegant: 0 4px 20px -4px hsl(240 3% 10% / 0.08);
+    --shadow-brass: 0 4px 20px -4px hsl(38 24% 63% / 0.3);
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 240 3% 10%;
+    --sidebar-foreground: 60 10% 89%;
+    --sidebar-primary: 38 24% 63%;
+    --sidebar-primary-foreground: 240 3% 10%;
+    --sidebar-accent: 240 3% 18%;
+    --sidebar-accent-foreground: 60 10% 89%;
+    --sidebar-border: 240 3% 25%;
+    --sidebar-ring: 38 24% 63%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 240 3% 10%;
+    --foreground: 60 10% 89%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 240 3% 14%;
+    --card-foreground: 60 10% 89%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 240 3% 10%;
+    --popover-foreground: 60 10% 89%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 60 10% 89%;
+    --primary-foreground: 240 3% 10%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 240 3% 18%;
+    --secondary-foreground: 60 10% 89%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 240 3% 18%;
+    --muted-foreground: 60 5% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 38 24% 63%;
+    --accent-foreground: 240 3% 10%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 240 3% 25%;
+    --input: 240 3% 18%;
+    --ring: 38 24% 63%;
   }
 }
 
@@ -100,6 +98,135 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Archivo', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo', system-ui, sans-serif;
+    @apply font-bold tracking-tight;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  /* Technical border style */
+  .border-technical {
+    @apply border border-foreground/20;
+  }
+
+  /* Brass gradient for buttons and accents */
+  .bg-brass-gradient {
+    background: linear-gradient(135deg, hsl(38 24% 63%), hsl(38 30% 70%));
+  }
+
+  /* Hero text styling */
+  .hero-title {
+    @apply text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter leading-none;
+  }
+
+  .hero-subtitle {
+    @apply text-lg md:text-xl font-light tracking-wide;
+  }
+
+  /* Technical specs styling */
+  .specs-table {
+    @apply font-mono text-sm;
+  }
+
+  /* Marquee animation */
+  .marquee {
+    @apply flex overflow-hidden;
+  }
+
+  .marquee-content {
+    @apply flex shrink-0 animate-marquee items-center gap-8;
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1;
+    box-shadow: var(--shadow-elegant);
+  }
+
+  /* Brass accent underline */
+  .brass-underline {
+    @apply relative;
+  }
+
+  .brass-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-[1px] bg-accent scale-x-0 origin-left transition-transform duration-300;
+  }
+
+  .brass-underline:hover::after {
+    @apply scale-x-100;
+  }
+
+  /* Outlined text */
+  .text-outline {
+    -webkit-text-stroke: 1px hsl(var(--foreground));
+    color: transparent;
+  }
+
+  /* Technical grid lines */
+  .grid-lines {
+    background-image: 
+      linear-gradient(to right, hsl(var(--foreground) / 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--foreground) / 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+@layer utilities {
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
   }
 }
